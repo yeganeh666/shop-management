@@ -7,9 +7,15 @@ struct Object{
     int amount,cost;
 }Objects[100];
 int Counter=0;
+void ADD_NEW();
+void SEARCH();
+void SORT();
+void LIST();
+void DELETE();
+void menue();
 int main()
 {
-    cout << "Hello World!" << endl;
+    menue();
     return 0;
 }
 void ADD_NEW(){
@@ -50,9 +56,7 @@ void swap(Object *xp, Object *yp)
 {
     Object temp = *xp;
     *xp = *yp;
-    *yp = temp;
-}
-
+    *yp = temp;}
 // A function to implement bubble sort
 void SORT(){
     int i, j;
